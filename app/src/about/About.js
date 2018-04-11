@@ -12,12 +12,12 @@ export default class About extends Component {
   render() {
     return (
       <div className="aboutContent">
-        <p>Hi, I'm João!</p>
-        <p>I'm a web developer based in Porto, Portugal.</p>
-        <p>From early on, I had a special interest and curiosity about tech, that motivated me to learn some stuff on my own. My formal education is on graphic design and multimedia, so front-end always came easy to me.</p>
-        <p>As both web developer and designer, my passion is for making good looking web apps, that not only work, but feel good to use.</p>
-        <p>At the moment, I'm working at 327 Creative Studio, a design studio based in Porto, where we focus on creating great brands.</p>
-        <p>I still make some stuff on my own from time to time, so if you have a great idea for a project, send me an email. I'm always available to give you a feedback and work together to make something awsome.</p>
+        <p>Hi, I’m João and I’m a web developer based in Porto, Portugal.</p>
+        <p>From early on, I had a special interest and curiosity about tech, that motivated me to learn some stuff on my own. My academic background is on graphic design and multimedia, so front-end was always apealing to me.</p>
+        <p>As both web developer and designer, my passion is for making good looking web applications, that not only work, but feel good to use.</p>
+        <p>Right now, I’m working full-time at <a target="_blank" href="http://327.pt">327 Creative Studio</a>, a design studio based in Porto, where we focus on creating great brands.</p>
+        <p>I still make some stuff on the side, mainly with Proto and Mano a Mano, other two design studios in Porto.</p>
+        <p>I’m always looking for people to collaborate with, so if you have a great idea for a project, send me an email. I’m always happy to give you feedback and work together to make something awsome.</p>
         <div className="social">
           <a rel="noopener noreferrer" target="_blank" href="mailto:mail@joaobelo.pt"><img src={iconEmail} alt="Email" /> mail@joaobelo.pt</a>
           <a rel="noopener noreferrer" target="_blank" href="https://github.com/jpbelo"><img src={iconGithub} alt="Github" /> /jpbelo</a>

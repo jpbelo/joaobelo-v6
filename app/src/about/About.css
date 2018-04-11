@@ -1,20 +1,14 @@
-.aboutContent {
-
-}
-.aboutContent > p {
+.aboutContent p {
   margin-bottom: 20px;
-  line-height: 1.4;
-}
-  .social {
-    margin-top: 40px;
-  }
-    .social > a {
-      margin-top: 20px;
-      display: block;
+  line-height: 1.4; }
+
+.aboutContent .social {
+  margin-top: 40px; }
+  .aboutContent .social a {
+    margin-top: 20px;
+    display: block;
+    vertical-align: middle; }
+    .aboutContent .social a img {
+      width: 20px;
       vertical-align: middle;
-    }
-      .social > a > img {
-        width: 20px;
-        vertical-align: middle;
-        margin-right: 10px;
-      }
+      margin-right: 10px; }

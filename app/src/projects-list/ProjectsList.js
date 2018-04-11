@@ -65,7 +65,7 @@ export default class ProjectsList extends Component {
           <div key={project.id}>
             <h3>{project.name} <span>{project.type}</span></h3>
             <p dangerouslySetInnerHTML={ {__html: project.description} }></p>
-            <p><a target="_blank" href={project.external_url}>project link</a></p>
+            <a target="_blank" href={project.external_url}>project link</a>
           </div>
         )}
       </div>
