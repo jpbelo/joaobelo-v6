@@ -14,7 +14,7 @@
   $paths = [
       [
         '/projects',
-        'SELECT * FROM public_projects'
+        'SELECT * FROM public_projects ORDER BY date DESC'
       ],[
         '/projects/id',
         'SELECT * FROM public_projects WHERE id = $id'

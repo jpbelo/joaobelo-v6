@@ -63,7 +63,9 @@ export default class ProjectsList extends Component {
       <div className="projectsList">
         {projects.map(project =>
           <div key={project.id}>
-            <p>{project.name} ({project.name_id})</p>
+            <h3>{project.name} <span>{project.type}</span></h3>
+            <p dangerouslySetInnerHTML={ {__html: project.description} }></p>
+            <p><a target="_blank" href={project.external_url}>project link</a></p>
           </div>
         )}
       </div>

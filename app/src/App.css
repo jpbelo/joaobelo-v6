@@ -15,23 +15,44 @@ body {
     }
 
       .Projects, .Highlights {
-        width: 50%;
         display: inline-block;
         vertical-align: top;
       }
+      .Projects {
+        width: 40%;
+      }
+      .Highlights {
+        width: 60%;
+      }
 
-        .Projects > .title, .Highlights > .title {
-          height: 100px;
+        .Projects > .title {
+          height: 80px;
           width: 100%;
           vertical-align: center;
-          line-height: 100px;
+          line-height: 80px;
           padding: 0 40px;
-          border: 1px dashed red;
         }
 
-        .highlightsList, .projectsList {
-          height: calc(100vh - 100px);
+        .tabTitle {
+          height: 80px;
+          width: 100%;
+          vertical-align: center;
+          line-height: 80px;
           padding: 0 40px;
+          cursor: pointer;
+        }
+          .tabTitle > li:hover {
+            color: grey;
+          }
+
+          .tabTitle > li {
+            width: 50%;
+            display: inline-block;
+          }
+
+        .highlightsList, .projectsList, .aboutContent {
+          height: calc(100vh - 80px);
+          padding: 60px 40px;
           overflow-y: scroll;
           -webkit-overflow-scrolling: touch;
         }
