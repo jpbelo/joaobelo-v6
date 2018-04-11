@@ -7,16 +7,16 @@ function router($paths){
 
   // http request
   $callArray = array_values( array_filter( explode('/', $_SERVER['REQUEST_URI']) ) );
-  $http1 = $callArray[0];
-  $http2 = $callArray[1];
+  $http1 = ( isset($callArray[0]) ? $callArray[0] : null );
+  $http2 = ( isset($callArray[1]) ? $callArray[1] : null );
 
   // paths from the router array
   foreach ($paths as $path) {
 
     $thisPath         = $path[0];
     $thisPathParts    = array_values( array_filter( explode('/', $thisPath) ) );
-    $thishttp1        = ($thisPathParts[0] ? $thisPathParts[0] : null );
-    $thishttp2        = ($thisPathParts[1] ? $thisPathParts[1] : null );
+    $thishttp1        = ( isset($thisPathParts[0]) ? $thisPathParts[0] : null );
+    $thishttp2        = ( isset($thisPathParts[1]) ? $thisPathParts[1] : null );
     $thisSQL          = $path[1];
 
     // Define which SQL to use
@@ -42,7 +42,7 @@ function router($paths){
 
 
 
-  if( !$resultSQL ){
+  if( !isset($resultSQL) ){
 
     $errorMessage = array(['message' => 'no results']);
     echo json_encode($errorMessage);
