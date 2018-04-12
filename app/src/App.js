@@ -36,7 +36,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {!this.state.isMobile && <div className="Projects"><div className="title"><h1>Projects</h1></div><ProjectsList /></div>}
+        {!this.state.isMobile && <div className="Projects"><div className="title"><h1>My Work</h1></div><ProjectsList /></div>}
         <div className="Highlights">
           <Tabs>
             <TabList className="tabTitle">
