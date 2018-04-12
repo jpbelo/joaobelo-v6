@@ -63,7 +63,8 @@ export default class Highlights extends Component {
       <div className="highlightsList">
         {highlights.map(highlight =>
           <div key={highlight.id}>
-            <h3>{highlight.title}</h3>
+            <h2>{highlight.title}</h2>
+            <h3>{highlight.date}</h3>
             <p dangerouslySetInnerHTML={ {__html: highlight.info} }></p>
           </div>
         )}

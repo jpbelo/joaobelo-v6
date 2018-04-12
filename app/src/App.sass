@@ -1,14 +1,14 @@
 h1
-  font-family: 'Lobster', cursive
+  font-family: 'Crimson Text', serif
   font-weight: 400
   color: black
 
 h2
-  font-family: 'Crimson Text', serif
+  font-family: 'Open Sans', serif
   font-weight: 600
   color: black
 
-h3, p, li, a
+h3, p, li, a, span
   font-family: 'Open Sans', sans-serif
   font-weight: 300
   line-height: 1.4
@@ -17,10 +17,7 @@ h3, p, li, a
 p>b
   font-weight: 700
 
-a
-  transition: opacity .3s ease-in-out
-  &:hover
-    opacity: .6
+
 p>a
   color: inherit
   border-bottom: 1px solid #f9df86
@@ -50,7 +47,7 @@ body
 
         .highlightsList, .projectsList, .aboutContent
           height: calc(100vh - 80px)
-          padding: 60px 40px
+          padding: 20px 40px
           overflow-y: scroll
           -webkit-overflow-scrolling: touch
 
@@ -65,9 +62,13 @@ body
           line-height: 80px
           padding: 0 40px
 
+          h1
+            font-size: 18px
 
       .Highlights
         width: 60%
+        @media screen and (max-width: 699px)
+          width: 100%
 
         .tabTitle
           height: 80px
@@ -80,8 +81,13 @@ body
             display: inline-block
             line-height: 80px
             cursor: pointer
-            &:hover h2
+            @media screen and (max-width: 699px)
+              width: 33.3%
+            h1
+              transition: color .2s ease-in-out
+              font-size: 18px
+            &:hover h1
               color: grey
-            &[aria-selected='true'] h2
+            &[aria-selected='true'] h1
               border-bottom: 1px solid black
-              opacity: .6
+              color: grey

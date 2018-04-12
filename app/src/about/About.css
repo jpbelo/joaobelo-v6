@@ -7,7 +7,11 @@
   .aboutContent .social a {
     margin-top: 20px;
     display: block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    transition: opacity .2s ease-in-out;
+    font-size: 13px; }
+    .aboutContent .social a:hover {
+      opacity: .5; }
     .aboutContent .social a img {
       width: 20px;
       vertical-align: middle;

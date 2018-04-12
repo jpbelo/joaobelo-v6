@@ -9,26 +9,47 @@ import './App.css';
 
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      isMobile: false
+    };
+  }
+
+
+  componentDidMount() {
+    window.onresize = () => {
+      if(window.innerWidth < 700){
+        this.setState({
+          isMobile: true
+        });
+      }else{
+        this.setState({
+          isMobile: false
+        });
+      }
+    };
+  }
+
+
   render() {
     return (
       <div className="App">
-        <div className="Projects">
-          <div className="title">
-            <h2>Projects</h2>
-          </div>
-          <ProjectsList />
-        </div>
+        {!this.state.isMobile && <div className="Projects"><div className="title"><h1>Projects</h1></div><ProjectsList /></div>}
         <div className="Highlights">
           <Tabs>
             <TabList className="tabTitle">
-              <Tab><h2>Life Events</h2></Tab>
-              <Tab><h2>About me</h2></Tab>
+              {this.state.isMobile && <Tab><h1>Projects</h1></Tab>}
+              <Tab><h1>About me</h1></Tab>
+              <Tab><h1>Life Events</h1></Tab>
             </TabList>
-            <TabPanel>
-              <Highlights />
-            </TabPanel>
+            {this.state.isMobile && <TabPanel><ProjectsList /></TabPanel>}
             <TabPanel>
               <About />
+            </TabPanel>
+            <TabPanel>
+              <Highlights />
             </TabPanel>
           </Tabs>
         </div>

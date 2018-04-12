@@ -17,7 +17,7 @@ export default class About extends Component {
         <p>As both web developer and designer, my passion is for making good looking web applications, that not only work, but feel good to use.</p>
         <p>Right now, I’m working full-time at <a target="_blank" href="http://327.pt">327 Creative Studio</a>, a design studio based in Porto, where we focus on creating great brands.</p>
         <p>I still make some stuff on the side, mainly with Proto and Mano a Mano, other two design studios in Porto.</p>
-        <p>I’m always looking for people to collaborate with, so if you have a great idea for a project, send me an email. I’m always happy to give you feedback and work together to make something awsome.</p>
+        <p>I’m always looking for people to collaborate with, so if you have a great idea for a project, send me an email. I’d be happy to give you feedback and work together to create something awsome.</p>
         <div className="social">
           <a rel="noopener noreferrer" target="_blank" href="mailto:mail@joaobelo.pt"><img src={iconEmail} alt="Email" /> mail@joaobelo.pt</a>
           <a rel="noopener noreferrer" target="_blank" href="https://github.com/jpbelo"><img src={iconGithub} alt="Github" /> /jpbelo</a>

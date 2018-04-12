@@ -26,7 +26,7 @@
         'SELECT * FROM public_social'
       ],[
         '/highlights',
-        'SELECT * FROM public_highlights'
+        'SELECT * FROM public_highlights ORDER BY date DESC'
       ]
   ];
 

@@ -1,14 +1,14 @@
 h1 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Crimson Text', serif;
   font-weight: 400;
   color: black; }
 
 h2 {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Open Sans', serif;
   font-weight: 600;
   color: black; }
 
-h3, p, li, a {
+h3, p, li, a, span {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   line-height: 1.4;
@@ -16,11 +16,6 @@ h3, p, li, a {
 
 p > b {
   font-weight: 700; }
-
-a {
-  transition: opacity .3s ease-in-out; }
-  a:hover {
-    opacity: .6; }
 
 p > a {
   color: inherit;
@@ -44,7 +39,7 @@ body {
         vertical-align: top; }
         body #root .App .Projects .highlightsList, body #root .App .Projects .projectsList, body #root .App .Projects .aboutContent, body #root .App .Highlights .highlightsList, body #root .App .Highlights .projectsList, body #root .App .Highlights .aboutContent {
           height: calc(100vh - 80px);
-          padding: 60px 40px;
+          padding: 20px 40px;
           overflow-y: scroll;
           -webkit-overflow-scrolling: touch; }
       body #root .App .Projects {
@@ -55,8 +50,13 @@ body {
           vertical-align: center;
           line-height: 80px;
           padding: 0 40px; }
+          body #root .App .Projects .title h1 {
+            font-size: 18px; }
       body #root .App .Highlights {
         width: 60%; }
+        @media screen and (max-width: 699px) {
+          body #root .App .Highlights {
+            width: 100%; } }
         body #root .App .Highlights .tabTitle {
           height: 80px;
           width: 100%;
@@ -67,8 +67,14 @@ body {
             display: inline-block;
             line-height: 80px;
             cursor: pointer; }
-            body #root .App .Highlights .tabTitle li:hover h2 {
+            @media screen and (max-width: 699px) {
+              body #root .App .Highlights .tabTitle li {
+                width: 33.3%; } }
+            body #root .App .Highlights .tabTitle li h1 {
+              transition: color .2s ease-in-out;
+              font-size: 18px; }
+            body #root .App .Highlights .tabTitle li:hover h1 {
               color: grey; }
-            body #root .App .Highlights .tabTitle li[aria-selected='true'] h2 {
+            body #root .App .Highlights .tabTitle li[aria-selected='true'] h1 {
               border-bottom: 1px solid black;
-              opacity: .6; }
+              color: grey; }
