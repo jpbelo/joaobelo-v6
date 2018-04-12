@@ -30,6 +30,7 @@ class App extends Component {
         });
       }
     };
+    window.dispatchEvent(new Event('resize'));
   }
 
 
