@@ -27,7 +27,8 @@ p > a {
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent; }
   body #root {
     width: 100%;
     height: 100%; }
