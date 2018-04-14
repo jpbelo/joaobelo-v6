@@ -6,7 +6,9 @@ require_once('config.php');
 function router($paths){
 
   // http request
-  $callArray = array_values( array_filter( explode('/', $_SERVER['REQUEST_URI']) ) );
+  $subPath = str_replace('/index.php', '', $_SERVER['PHP_SELF']);
+  $request = str_replace($subPath, '', $_SERVER['REQUEST_URI']);
+  $callArray = array_values( array_filter( explode('/', $request) ) );
   $http1 = ( isset($callArray[0]) ? $callArray[0] : null );
   $http2 = ( isset($callArray[1]) ? $callArray[1] : null );
 
