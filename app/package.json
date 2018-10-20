@@ -11,13 +11,14 @@
     "react-tabs": "^2.2.1"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
-    "build-js": "react-scripts build",
-    "build": "npm-run-all build-css build-js",
+    "build:css": "node-sass-chokidar src/ -o src/",
+    "build:js": "react-scripts build",
+    "watch:css": "npm run build:css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "watch:js": "react-scripts start",
+    "start": "npm-run-all -p watch:css watch:js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build": "npm-run-all build:css build:js",
+    "deploy": "rsync -avh --exclude=.DS_Store --exclude=node_modules --exclude=README.md --exclude=.git --exclude=.gitignore ./build/ ovh:/var/www/joaobelo.pt/html --delete"
   }
 }
