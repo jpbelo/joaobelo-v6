@@ -19,6 +19,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build": "npm-run-all build:css build:js",
-    "deploy": "rsync -avh --exclude=.DS_Store --exclude=node_modules --exclude=README.md --exclude=.git --exclude=.gitignore ./build/ ovh:/var/www/joaobelo.pt/html --delete"
+    "sync": "rsync -avh --exclude=.DS_Store --exclude=node_modules --exclude=README.md --exclude=.git --exclude=.gitignore ./build/ ovh:/var/www/joaobelo.pt/html --delete",
+    "live-url": "open https://prelive.joaobelo.pt",
+    "deploy": "yarn build && yarn sync && yarn live-url"
   }
 }
