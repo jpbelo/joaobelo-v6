@@ -8,7 +8,6 @@ import iconLinkedin from './img/icon-linkedin.svg';
 import iconTwitter from './img/icon-twitter.svg';
 
 export default class About extends Component {
-
   render() {
     return (
       <div className="aboutContent">
@@ -27,5 +26,4 @@ export default class About extends Component {
       </div>
     );
   }
-
 }

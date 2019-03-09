@@ -1,2 +1,3 @@
-# joaobelo-v6
-version 6 for joaobelo.pt
+# joaobelo.pt
+
+made with create-react-app and deployed with zeit now

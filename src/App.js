@@ -6,8 +6,6 @@ import Highlights from './highlights/Highlights';
 import About from './about/About';
 import './App.css';
 
-
-
 class App extends Component {
 
   constructor(props) {
@@ -16,7 +14,6 @@ class App extends Component {
       isMobile: false
     };
   }
-
 
   componentDidMount() {
     window.onresize = () => {
@@ -32,7 +29,6 @@ class App extends Component {
     };
     window.dispatchEvent(new Event('resize'));
   }
-
 
   render() {
     return (
@@ -57,6 +53,7 @@ class App extends Component {
       </div>
     );
   }
+
 }
 
 export default App;
