@@ -1,0 +1,18 @@
+.aboutContent p {
+  margin-bottom: 20px;
+  line-height: 1.4; }
+
+.aboutContent .social {
+  margin-top: 40px; }
+  .aboutContent .social a {
+    margin-top: 20px;
+    display: block;
+    vertical-align: middle;
+    transition: opacity .2s ease-in-out;
+    font-size: 13px; }
+    .aboutContent .social a:hover {
+      opacity: .5; }
+    .aboutContent .social a img {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 10px; }
