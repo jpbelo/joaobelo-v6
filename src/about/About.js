@@ -14,7 +14,7 @@ export default class About extends Component {
         <p>Hi, I’m João and I’m a FE Developer based in Porto, Portugal.</p>
         <p>From early on, I had a special interest and curiosity about tech, that motivated me to learn some stuff on my own. My academic background is on graphic design and multimedia, so front-end was always apealing to me.</p>
         <p>As both developer and designer, my passion is for making good looking interfaces, that not only work, but feel good to use.</p>
-        <p>Right now, I’m working full-time at <a rel="noopener noreferrer" target="_blank" href="http://mindera.com">Mindera</a> and <a rel="noopener noreferrer" target="_blank" href="https://www.net-a-porter.com">Net-a-Porter</a>, using technology to build great products.</p>
+        <p>ATM, I’m working full-time at <a rel="noopener noreferrer" target="_blank" href="http://mindera.com">Mindera</a>, using technology to build great products for clients like <a rel="noopener noreferrer" target="_blank" href="https://net-a-porter.com">Net-a-Porter</a> and <a rel="noopener noreferrer" target="_blank" href="https://waitrose.com">Waitrose</a>.</p>
         <p>From time to time, I still make cool stuff with other people, like <a rel="noopener noreferrer" target="_blank" href="http://www.327.pt">327</a>, <a rel="noopener noreferrer" target="_blank" href="http://www.proto.pt">Proto</a> and <a rel="noopener noreferrer" target="_blank" href="http://manoamanoclub.com">Mano a Mano</a>.</p>
         <p>I’m always looking for new and cool stuff to get my hands on, so if you have a great idea for a project, send me an email. I’ll be happy to give you some feedback and work together to create something awsome.</p>
         <div className="social">
