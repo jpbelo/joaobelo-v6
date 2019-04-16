@@ -39,7 +39,7 @@ class App extends Component {
             <TabList className="tabTitle">
               {this.state.isMobile && <Tab><h1>Projects</h1></Tab>}
               <Tab><h1>About me</h1></Tab>
-              <Tab><h1>Life Events</h1></Tab>
+              <Tab><h1>Events</h1></Tab>
             </TabList>
             {this.state.isMobile && <TabPanel><ProjectsList /></TabPanel>}
             <TabPanel>
