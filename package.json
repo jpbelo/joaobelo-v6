@@ -7,14 +7,14 @@
     "react-dom": "^16.8.4",
     "react-scripts": "^3.0.1",
     "react-tabs": "^3.0.0",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "styled-system": "^4.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "now-build": "react-scripts build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

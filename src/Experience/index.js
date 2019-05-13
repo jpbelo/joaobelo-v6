@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { space } from 'styled-system'
 
 import experiences from './data'
 
@@ -9,12 +10,16 @@ const ExperiencesContainer = styled.div`
 `
 
 const ExperienceCard = styled.div`
-  margin-bottom: 40px;
+  ${space}
   h2 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   h3 {
-    margin-bottom: 5px;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  p {
+    margin-bottom: 15px;
   }
 `
 
@@ -22,7 +27,7 @@ const TechsContainer = styled.div`
   margin-top: 10px;
 `
 
-const TechCard = styled.span`
+const TechCard = styled.a`
   font-size: 11px;
   display: inline-block;
   border-radius: 6px;
@@ -31,6 +36,13 @@ const TechCard = styled.span`
   margin-bottom: 6px;
   line-height: 2;
   background-color: ${(props) => props.theme.colors.grey.light};
+  transition: background-color 250ms ease-in-out;
+  &[href^='http'] {
+    background-color: ${(props) => props.theme.colors.secondary.bgAlt};
+    &:hover {
+      background: ${(props) => props.theme.colors.primary.bgAlt};
+    }
+  }
 `
 
 export default class Experience extends Component {
@@ -38,15 +50,17 @@ export default class Experience extends Component {
     return (
       <ExperiencesContainer>
         {experiences.map((experience) => (
-          <ExperienceCard key={experience.id}>
+          <ExperienceCard key={experience.id} mb={4}>
             <h2>{experience.company}</h2>
             <h3>
               {experience.dateStart} to {experience.dateEnd}
             </h3>
             <p dangerouslySetInnerHTML={{ __html: experience.info }} />
             <TechsContainer>
-              {experience.techs.map((tech) => (
-                <TechCard>{tech}</TechCard>
+              {experience.techs.map((tech, index) => (
+                <TechCard target="_blank" href={tech.url} key={index}>
+                  {tech.name}
+                </TechCard>
               ))}
             </TechsContainer>
           </ExperienceCard>

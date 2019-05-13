@@ -56,7 +56,7 @@ class App extends Component {
                     <h1>About.</h1>
                   </Tab>
                   <Tab>
-                    <h1>Events.</h1>
+                    <h1>Work experience.</h1>
                   </Tab>
                 </TabList>
                 {this.state.isMobile && (
