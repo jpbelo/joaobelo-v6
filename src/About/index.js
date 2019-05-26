@@ -4,6 +4,7 @@ import './About.css';
 
 import iconEmail from './img/icon-email.svg';
 import iconGithub from './img/icon-github.svg';
+import iconBit from './img/icon-bit.svg';
 import iconLinkedin from './img/icon-linkedin.svg';
 import iconTwitter from './img/icon-twitter.svg';
 
@@ -20,6 +21,7 @@ export default class About extends Component {
         <div className="social">
           <a rel="noopener noreferrer" target="_blank" href="mailto:joaobelo.dev@gmail.com"><img src={iconEmail} alt="Email" /> joaobelo.dev@gmail.com</a>
           <a rel="noopener noreferrer" target="_blank" href="https://github.com/jpbelo"><img src={iconGithub} alt="Github" /> /jpbelo</a>
+          <a rel="noopener noreferrer" target="_blank" href="https://bit.dev/joaobelo"><img src={iconBit} alt="Bit" /> /joaobelo</a>
           <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/joaobelo"><img src={iconLinkedin} alt="Linkedin" /> /joaobelo</a>
           <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/jpasbelo"><img src={iconTwitter} alt="Twitter" /> @jpasbelo</a>
         </div>
