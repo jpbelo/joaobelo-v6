@@ -1,5 +1,16 @@
 const projects = [
   {
+    "id": "35",
+    "name_id": "stucco",
+    "name": "Stucco",
+    "tags": "Stucco",
+    "type": "website",
+    "external_url": "https://stucco.pt",
+    "tools": "html, css, js, php, mySLQ, custom cms",
+    "description": "project developed with <a href=\"http://327.pt\" target=\"_blank\">327 creative studio</a>",
+    "date": "2019-04-01"
+  },
+  {
     "id": "34",
     "name_id": "lepetitcamion",
     "name": "Le Petit Camion",
