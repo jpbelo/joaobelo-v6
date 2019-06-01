@@ -2,10 +2,10 @@ import React, { Component, Fragment } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import { ThemeProvider } from 'styled-components'
 
-import theme from './theme'
-import ProjectsList from './ProjectsList'
-import Experience from './Experience'
-import About from './About'
+import theme from 'theme'
+import ProjectsList from 'containers/ProjectsList'
+import Experience from 'containers/Experience'
+import About from 'containers/About'
 import './App.css'
 
 class App extends Component {
