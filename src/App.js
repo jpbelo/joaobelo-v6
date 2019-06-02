@@ -1,12 +1,72 @@
 import React, { Component, Fragment } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
-import { ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
 import theme from 'theme'
 import ProjectsList from 'containers/ProjectsList'
 import Experience from 'containers/Experience'
 import About from 'containers/About'
-import './App.css'
+
+const LeftPanel = styled.div`
+  padding: 0 40px;
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+`
+
+const LeftPanelContent = styled.div`
+  padding-top: 20px;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+`
+
+const RightPanel = styled.div`
+  padding: 0 40px;
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+  @media (max-width: 699px) {
+    width: 100%;
+  }
+`
+
+const RightPanelContent = styled.div`
+  padding-top: 20px;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  @media (max-width: 699px) {
+    height: calc(100vh - 200px);
+  }
+`
+
+const StyledTabList = styled(TabList)`
+  display: flex;
+  & > li {
+    flex: 1 1 0;
+    cursor: pointer;
+    & > a {
+      transition: color 0.2s ease-in-out;
+    }
+    &:hover > a {
+      color: grey;
+    }
+    &[aria-selected='true'] {
+      border-bottom: 1px solid black;
+      & > a {
+        color: grey;
+      }
+    }
+  }
+`
+
+const Title = styled.a`
+  line-height: 80px;
+  font-size: 18px;
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+`
 
 class App extends Component {
   constructor(props) {
@@ -37,41 +97,43 @@ class App extends Component {
         <ThemeProvider theme={theme}>
           <Fragment>
             {!this.state.isMobile && (
-              <div className="Projects">
-                <div className="title">
-                  <h1>My Work.</h1>
-                </div>
-                <ProjectsList />
-              </div>
+              <LeftPanel>
+                <Title>My Work.</Title>
+                <LeftPanelContent>
+                  <ProjectsList />
+                </LeftPanelContent>
+              </LeftPanel>
             )}
-            <div className="Highlights">
+            <RightPanel>
               <Tabs>
-                <TabList className="tabTitle">
+                <StyledTabList>
                   {this.state.isMobile && (
                     <Tab>
-                      <h1>Projects.</h1>
+                      <Title>Projects.</Title>
                     </Tab>
                   )}
                   <Tab>
-                    <h1>About.</h1>
+                    <Title>About.</Title>
                   </Tab>
                   <Tab>
-                    <h1>Work experience.</h1>
+                    <Title>Work experience.</Title>
                   </Tab>
-                </TabList>
-                {this.state.isMobile && (
+                </StyledTabList>
+                <RightPanelContent>
+                  {this.state.isMobile && (
+                    <TabPanel>
+                      <ProjectsList />
+                    </TabPanel>
+                  )}
                   <TabPanel>
-                    <ProjectsList />
+                    <About />
                   </TabPanel>
-                )}
-                <TabPanel>
-                  <About />
-                </TabPanel>
-                <TabPanel>
-                  <Experience />
-                </TabPanel>
+                  <TabPanel>
+                    <Experience />
+                  </TabPanel>
+                </RightPanelContent>
               </Tabs>
-            </div>
+            </RightPanel>
           </Fragment>
         </ThemeProvider>
       </div>
