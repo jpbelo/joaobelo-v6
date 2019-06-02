@@ -12,7 +12,7 @@ const mockProps = {
   url: 'https://waitrose.com',
   info:
     '(<a href="https://mindera.com" target="_blank">Mindera</a>) Working as FE developer on <a href="https://waitrose.com" target="_blank">Waitrose‘s website</a>.',
-  techs: [{ name: 'ReactJS', url: 'https://reactjs.org/' }, { name: 'Redux', url: 'https://redux.js.org/' }],
+  techs: [{ name: 'ReactJS', url: 'https://reactjs.org/' }, { name: 'Redux' }],
 }
 
 test('Experience Card display correctly', () => {

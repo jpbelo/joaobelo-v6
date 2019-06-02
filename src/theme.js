@@ -17,9 +17,9 @@ export default {
     },
     grey: {
       main: 'hsl(0,0%,20%)',
-      light: 'hsl(0,0%,90%)',
       bg: 'hsl(0,0%,40%)',
       bgAlt: 'hsl(0,0%,50%)',
+      light: 'hsl(0,0%,90%)',
     },
   },
 }

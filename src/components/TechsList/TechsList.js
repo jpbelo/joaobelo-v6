@@ -14,7 +14,11 @@ export default class TechsList extends Component {
     return (
       <TechsListContainer>
         {techsList.map((tech, index) => (
-          <TagButton {...tech} key={index} />
+          <TagButton
+            {...tech}
+            key={index}
+            modifiers={['asButton', 'secondary']}
+          />
         ))}
       </TechsListContainer>
     )
@@ -25,7 +29,7 @@ TechsList.propTypes = {
   techsList: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
+      url: PropTypes.string,
     }),
   ).isRequired,
 }

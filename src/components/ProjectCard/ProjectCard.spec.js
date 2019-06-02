@@ -11,7 +11,10 @@ const mockProps = {
   tags: 'João Belo',
   type: 'website',
   external_url: 'https://github.com/jpbelo/joaobelo-v6',
-  tools: 'ReactJS, styled components',
+  tools: [
+    { name: 'ReactJS', url: 'https://reactjs.org/' },
+    { name: 'styled components' },
+  ],
   description: '(this actual website) project designed and developed by myself',
   date: '2019-03-01',
 }
