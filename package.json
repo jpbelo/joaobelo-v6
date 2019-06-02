@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "clear": "rm -rf node_modules build"
   },
@@ -17,6 +17,12 @@
     "styled-components": "^4.2.1",
     "styled-system": "^4.2.2"
   },
+  "devDependencies": {
+    "generact": "^0.4.0",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.0"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -26,7 +32,15 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {
-    "prettier": "^1.17.0"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm test"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
