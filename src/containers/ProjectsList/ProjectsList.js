@@ -3,18 +3,7 @@ import styled from 'styled-components'
 
 import ProjectCard from 'components/ProjectCard'
 
-const Container = styled.div`
-  .title {
-    height: 80px;
-    width: 100%;
-    vertical-align: center;
-    line-height: 80px;
-    padding: 0 40px;
-  }
-  h1 {
-    font-size: 18px;
-  }
-`
+const Container = styled.div``
 
 export default class ProjectsList extends Component {
   render() {

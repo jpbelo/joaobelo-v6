@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -34,7 +35,7 @@ const Container = styled.div`
   }
 `
 
-class ProjectCard extends Component {
+export default class ProjectCard extends Component {
   render() {
     const { name, type, description, tools, external_url } = this.props
     return (
@@ -52,4 +53,11 @@ class ProjectCard extends Component {
   }
 }
 
-export default ProjectCard
+ProjectCard.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  tools: PropTypes.string.isRequired,
+  external_url: PropTypes.string.isRequired,
+}

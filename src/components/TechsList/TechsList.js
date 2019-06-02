@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import TagButton from 'components/TagButton'
@@ -13,9 +14,18 @@ export default class TechsList extends Component {
     return (
       <TechsListContainer>
         {techsList.map((tech, index) => (
-          <TagButton {...tech} index={index} />
+          <TagButton {...tech} key={index} />
         ))}
       </TechsListContainer>
     )
   }
+}
+
+TechsList.propTypes = {
+  techsList: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 }

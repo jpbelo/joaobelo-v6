@@ -1,6 +1,6 @@
 export default [
   {
-    id: '4',
+    id: 4,
     dateStart: '2019-04-19',
     dateEnd: 'present',
     company: 'Waitrose',
@@ -19,9 +19,9 @@ export default [
     ],
   },
   {
+    id: 3,
     dateStart: '2018-06-11',
     dateEnd: '2019-04-14',
-    id: '3',
     company: 'NAP',
     url: 'https://net-a-porter.com',
     info:
@@ -42,7 +42,7 @@ export default [
     ],
   },
   {
-    id: '2',
+    id: 2,
     dateStart: '2014-08-04',
     dateEnd: '2018-06-01',
     company: '327 CS',
@@ -63,7 +63,7 @@ export default [
     ],
   },
   {
-    id: '1',
+    id: 1,
     dateStart: '2013-06-01',
     dateEnd: 'present',
     company: 'Freelancer',
