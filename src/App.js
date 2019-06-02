@@ -105,7 +105,7 @@ class App extends Component {
               </LeftPanel>
             )}
             <RightPanel>
-              <Tabs>
+              <Tabs defaultIndex={0}>
                 <StyledTabList>
                   {this.state.isMobile && (
                     <Tab>

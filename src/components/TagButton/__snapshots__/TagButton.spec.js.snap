@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button changes color when hovered 1`] = `
+.c0 {
+  font-size: 11px;
+  display: inline-block;
+  border-radius: 6px;
+  padding: 0 10px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  line-height: 2;
+  background-color: hsl(0,0%,90%);
+  -webkit-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+}
+
+.c0[href^='http'] {
+  background-color: hsl(46,50%,92%);
+}
+
+.c0[href^='http']:hover {
+  background: hsl(0,50%,90%);
+}
+
+<a
+  className="c0"
+  href="http://google.com"
+  target="_blank"
+>
+  Google
+</a>
+`;

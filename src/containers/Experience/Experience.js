@@ -3,8 +3,7 @@ import styled from 'styled-components'
 
 import ExperienceCard from 'components/ExperienceCard'
 
-const Container = styled.div`
-`
+const Container = styled.div``
 
 export default class Experience extends Component {
   render() {
@@ -12,7 +11,7 @@ export default class Experience extends Component {
     return (
       <Container>
         {experiences.map((experience) => (
-          <ExperienceCard {...experience} />
+          <ExperienceCard {...experience} key={experience.id} />
         ))}
       </Container>
     )

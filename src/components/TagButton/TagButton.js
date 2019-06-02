@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const TagButtonContainer = styled.a`
@@ -21,11 +22,16 @@ const TagButtonContainer = styled.a`
 
 export default class TagButton extends Component {
   render() {
-    const { url, name, index } = this.props
+    const { url, name } = this.props
     return (
-      <TagButtonContainer target="_blank" href={url} key={index}>
+      <TagButtonContainer target="_blank" href={url}>
         {name}
       </TagButtonContainer>
     )
   }
+}
+
+TagButton.propTypes = {
+  name: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 }
