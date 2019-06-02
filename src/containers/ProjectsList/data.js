@@ -1,6 +1,6 @@
-const projects = [
+export default [
   {
-    "id": "35",
+    "id": "36",
     "name_id": "stucco",
     "name": "Stucco",
     "tags": "Stucco",
@@ -9,6 +9,17 @@ const projects = [
     "tools": "html, css, js, php, mySLQ, custom cms",
     "description": "project developed with <a href=\"http://327.pt\" target=\"_blank\">327 creative studio</a>",
     "date": "2019-04-01"
+  },
+  {
+    "id": "35",
+    "name_id": "joaobelo",
+    "name": "joaobelo.pt (v6)",
+    "tags": "João Belo",
+    "type": "website",
+    "external_url": "https://github.com/jpbelo/joaobelo-v6",
+    "tools": "ReactJS, styled components",
+    "description": "(this actual website) project designed and developed by myself",
+    "date": "2019-03-01"
   },
   {
     "id": "34",
@@ -319,5 +330,3 @@ const projects = [
     "date": "2013-01-01"
   }
 ];
-
-export { projects }
