@@ -6,8 +6,16 @@ export default [
     tags: 'Stucco',
     type: 'website',
     external_url: 'https://stucco.pt',
-    tools: 'html, css, js, php, mySLQ, custom cms',
-    description: 'project developed with <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
+    description:
+      'project developed with <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2019-04-01',
   },
   {
@@ -17,8 +25,12 @@ export default [
     tags: 'João Belo',
     type: 'website',
     external_url: 'https://github.com/jpbelo/joaobelo-v6',
-    tools: 'ReactJS, styled components',
-    description: '(this actual website) project designed and developed by myself',
+    tools: [
+      { name: 'ReactJS', url: 'https://reactjs.org/' },
+      { name: 'styled components', url: 'https://www.styled-components.com/' },
+    ],
+    description:
+      '(this actual website) project designed and developed by myself',
     date: '2019-03-01',
   },
   {
@@ -28,8 +40,9 @@ export default [
     tags: 'Le Petit Camion',
     type: 'website',
     external_url: 'http://lepetitcamion.com',
-    tools: 'react js',
-    description: 'project developed with <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [{ name: 'ReactJS', url: 'https://reactjs.org/' }],
+    description:
+      'project developed with <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2019-02-20',
   },
   {
@@ -39,8 +52,16 @@ export default [
     tags: 'CLOO',
     type: 'website',
     external_url: 'http://cloo.pt',
-    tools: 'html, css, js, php, mySLQ, custom cms',
-    description: 'project developed with <a href="http://manoamanoclub.com" target="_blank">Mano a Mano</a>',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
+    description:
+      'project developed with <a href="http://manoamanoclub.com" target="_blank">Mano a Mano</a>',
     date: '2018-06-09',
   },
   {
@@ -50,8 +71,12 @@ export default [
     tags: 'The Darjeeling Express',
     type: 'website',
     external_url: 'http://thedarjeelingexpress.com',
-    tools: 'html, stylus, js',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [
+      { name: 'ReactJS', url: 'https://reactjs.org/' },
+      { name: 'Stylus lang', url: 'http://stylus-lang.com/' },
+    ],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2018-03-01',
   },
   {
@@ -61,8 +86,16 @@ export default [
     tags: 'o Colchete',
     type: 'website',
     external_url: 'http://ocolchete.com',
-    tools: 'html, css, js, php, mySLQ, custom cms',
-    description: 'project developed with <a href="http://www.proto.pt" target="_blank">Proto</a>',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
+    description:
+      'project developed with <a href="http://www.proto.pt" target="_blank">Proto</a>',
     date: '2018-02-15',
   },
   {
@@ -72,8 +105,15 @@ export default [
     tags: 'Gião Drawings',
     type: 'website',
     external_url: 'http://giao.pt',
-    tools: 'html, css, js, php, mySLQ',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+    ],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2018-01-15',
   },
   {
@@ -82,8 +122,9 @@ export default [
     name: 'Tocarro',
     tags: 'Tocarro app',
     type: 'mobile app',
-    external_url: 'https://itunes.apple.com/us/app/tocarro/id1334519301?ls=1&mt=8',
-    tools: 'react-native',
+    external_url:
+      'https://itunes.apple.com/us/app/tocarro/id1334519301?ls=1&mt=8',
+    tools: [{ name: 'react-native' }],
     description: 'mobile app for real-time bus waiting times in Porto (STCP)',
     date: '2018-01-14',
   },
@@ -94,8 +135,14 @@ export default [
     tags: 'João Belo',
     type: 'website',
     external_url: '',
-    tools: 'html, stylus, js, json api',
-    description: 'version 5 of joaobelo.pt<br>check out how I made it <a target="_blank" href="https://github.com/jpbelo/joaobelo-v5">here</a>',
+    tools: [
+      { name: 'html' },
+      { name: 'stylus lang' },
+      { name: 'js' },
+      { name: 'json api' },
+    ],
+    description:
+      'version 5 of joaobelo.pt<br>check out how I made it <a target="_blank" href="https://github.com/jpbelo/joaobelo-v5">here</a>',
     date: '2017-11-15',
   },
   {
@@ -105,8 +152,16 @@ export default [
     tags: 'Vimaplás',
     type: 'website',
     external_url: 'http://vimaplas.pt',
-    tools: 'html, css, js, jquery, php, custom cms',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2017-09-15',
   },
   {
@@ -116,8 +171,16 @@ export default [
     tags: 'Riopele',
     type: 'website',
     external_url: 'https://riopele.pt',
-    tools: 'html, css, js, jquery, php, custom cms',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2017-08-08',
   },
   {
@@ -127,8 +190,16 @@ export default [
     tags: 'plataforma do mar',
     type: 'website',
     external_url: 'http://plataformadomar.pt',
-    tools: 'html, css, js, jquery, php, custom cms',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2017-05-07',
   },
   {
@@ -138,8 +209,16 @@ export default [
     tags: 'cidades de excelência urbanismo acessibilidade',
     type: 'website',
     external_url: 'http://cidadesdeexcelencia.org',
-    tools: 'html, css, js, jquery, php, custom cms',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2017-03-06',
   },
   {
@@ -149,8 +228,16 @@ export default [
     tags: 'ESS engenharia',
     type: 'website',
     external_url: 'http://ess.pt',
-    tools: 'html, css, js, jquery, php, custom cms',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2017-01-05',
   },
   {
@@ -160,8 +247,16 @@ export default [
     tags: 'Secção Regional do Norte Ordem dos Médicos',
     type: 'website',
     external_url: 'http://nortemedico.pt',
-    tools: 'angular2, html, css, js, jquery, php, custom cms',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2016-10-10',
   },
   {
@@ -171,7 +266,14 @@ export default [
     tags: 'César Oliveira, fotografia, portfolio',
     type: 'website',
     external_url: 'http://cesaroliveirafotografia.com',
-    tools: 'html, css, js, jquery, php, custom cms',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
     description: 'web design by Sergio Campos',
     date: '2016-10-09',
   },
@@ -182,8 +284,9 @@ export default [
     tags: 'Clínica dentária',
     type: 'website',
     external_url: 'http://anabelaperesdesousa.pt',
-    tools: 'angular2, html, css, js',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [{ name: 'html' }, { name: 'css' }, { name: 'js' }, { name: 'php' }],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2016-04-10',
   },
   {
@@ -193,8 +296,9 @@ export default [
     tags: null,
     type: 'website',
     external_url: 'http://babygi.pt',
-    tools: 'html, css, jquery',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2016-03-07',
   },
   {
@@ -204,8 +308,17 @@ export default [
     tags: null,
     type: 'website',
     external_url: 'http://327.pt',
-    tools: 'angular2, html, css, js, jquery, php, custom cms',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [
+      { name: 'angular2' },
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2015-11-18',
   },
   {
@@ -215,8 +328,9 @@ export default [
     tags: null,
     type: 'website',
     external_url: 'http://combicoffee.pt',
-    tools: 'html, css, jquery',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [{ name: 'html' }, { name: 'css' }, { name: 'jQuery' }],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2015-10-20',
   },
   {
@@ -226,8 +340,9 @@ export default [
     tags: null,
     type: 'website',
     external_url: 'http://pratica04.pt',
-    tools: 'html, css, jquery',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [{ name: 'html' }, { name: 'css' }, { name: 'jQuery' }],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2015-07-01',
   },
   {
@@ -237,8 +352,9 @@ export default [
     tags: null,
     type: 'website',
     external_url: 'http://outlines.pt',
-    tools: 'html, css, jquery',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [{ name: 'html' }, { name: 'css' }, { name: 'jQuery' }],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2015-03-27',
   },
   {
@@ -248,8 +364,9 @@ export default [
     tags: null,
     type: 'website',
     external_url: 'http://boaenergia.pt',
-    tools: 'wordpress, woocomerce',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [{ name: 'wordpress' }, { name: 'woocomerce' }],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2015-03-11',
   },
   {
@@ -259,8 +376,16 @@ export default [
     tags: 'Associação de Ourivesaria e Relojoaria de Portugal',
     type: 'website',
     external_url: 'http://aorp.pt',
-    tools: 'html, css, js, jquery, php, custom cms',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2014-12-20',
   },
   {
@@ -270,8 +395,16 @@ export default [
     tags: null,
     type: 'website',
     external_url: 'http://ourivesariaemseguranca.pt',
-    tools: 'html, css, js, jquery, php, custom cms',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2014-08-06',
   },
   {
@@ -281,7 +414,14 @@ export default [
     tags: 'construção modular, domótica, segurança, climatização',
     type: 'website',
     external_url: 'http://dreamdomus.com',
-    tools: 'html, css, js, jquery, php, custom cms',
+    tools: [
+      { name: 'html' },
+      { name: 'css' },
+      { name: 'js' },
+      { name: 'php' },
+      { name: 'MySQL' },
+      { name: 'custom cms' },
+    ],
     description: 'web design by Tiago Moutinho',
     date: '2014-03-25',
   },
@@ -292,8 +432,9 @@ export default [
     tags: 'eio',
     type: 'website',
     external_url: 'http://eio.pt',
-    tools: 'html, css, jquery',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [{ name: 'html' }, { name: 'css' }, { name: 'jQuery' }],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2014-03-01',
   },
   {
@@ -303,8 +444,9 @@ export default [
     tags: null,
     type: 'website',
     external_url: 'http://ppdcstudio.com',
-    tools: 'html, css, js, jquery, php',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [{ name: 'html' }, { name: 'css' }, { name: 'js' }, { name: 'php' }],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2013-12-01',
   },
   {
@@ -314,8 +456,9 @@ export default [
     tags: null,
     type: 'website',
     external_url: 'http://outsidethebox.pt',
-    tools: 'html, css, jquery',
-    description: 'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
+    tools: [{ name: 'html' }, { name: 'css' }, { name: 'jQuery' }],
+    description:
+      'project developed at <a href="http://327.pt" target="_blank">327 creative studio</a>',
     date: '2013-11-01',
   },
   {
@@ -325,7 +468,7 @@ export default [
     tags: 'design, multimedia',
     type: 'website',
     external_url: 'http://tiagomoutinho.com',
-    tools: 'html, css, jquery',
+    tools: [{ name: 'html' }, { name: 'css' }, { name: 'jQuery' }],
     description: 'web design by Tiago Moutinho',
     date: '2013-01-01',
   },

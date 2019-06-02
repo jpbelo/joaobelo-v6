@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import ToolsList from 'components/ToolsList'
+
 const Container = styled.div`
   margin-bottom: 30px;
   h2 {
@@ -44,7 +46,7 @@ export default class ProjectCard extends Component {
           {name} <span>{type}</span>
         </h2>
         <p dangerouslySetInnerHTML={{ __html: description }} />
-        <span>{tools}</span>
+        <ToolsList toolsList={tools} />
         <a rel="noopener noreferrer" target="_blank" href={external_url}>
           — project link
         </a>
@@ -58,6 +60,6 @@ ProjectCard.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  tools: PropTypes.string.isRequired,
+  tools: PropTypes.array.isRequired,
   external_url: PropTypes.string.isRequired,
 }

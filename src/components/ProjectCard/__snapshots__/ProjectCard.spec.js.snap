@@ -1,6 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Project Card display correctly 1`] = `
+.c2 {
+  font-size: 11px;
+  color: hsl(0,0%,50%);
+}
+
+.c2:not(:last-child)::after {
+  content: ', ';
+}
+
+.c2[href^='http'] {
+  color: hsl(0,0%,40%);
+}
+
+.c2[href^='http']:hover {
+  color: hsl(0,97%,61%);
+}
+
+.c1 {
+  margin-top: 10px;
+}
+
 .c0 {
   margin-bottom: 30px;
 }
@@ -58,9 +79,22 @@ exports[`Project Card display correctly 1`] = `
       }
     }
   />
-  <span>
-    ReactJS, styled components
-  </span>
+  <div
+    className="c1"
+  >
+    <a
+      className="c2"
+      href="https://reactjs.org/"
+      target="_blank"
+    >
+      ReactJS
+    </a>
+    <span
+      className="c2"
+    >
+      styled components
+    </span>
+  </div>
   <a
     href="https://github.com/jpbelo/joaobelo-v6"
     rel="noopener noreferrer"

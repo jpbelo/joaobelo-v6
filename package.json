@@ -16,6 +16,7 @@
     "react-scripts": "^3.0.1",
     "react-tabs": "^3.0.0",
     "styled-components": "^4.2.1",
+    "styled-components-modifiers": "^1.2.1",
     "styled-system": "^4.2.2"
   },
   "devDependencies": {

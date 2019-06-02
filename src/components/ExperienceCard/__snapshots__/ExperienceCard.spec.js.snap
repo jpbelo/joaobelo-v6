@@ -9,9 +9,9 @@ exports[`Experience Card display correctly 1`] = `
   margin-right: 6px;
   margin-bottom: 6px;
   line-height: 2;
-  background-color: hsl(0,0%,90%);
   -webkit-transition: background-color 250ms ease-in-out;
   transition: background-color 250ms ease-in-out;
+  background-color: hsl(0,0%,90%);
 }
 
 .c2[href^='http'] {
@@ -19,7 +19,7 @@ exports[`Experience Card display correctly 1`] = `
 }
 
 .c2[href^='http']:hover {
-  background: hsl(0,50%,90%);
+  background: hsl(46,50%,85%);
 }
 
 .c1 {
@@ -71,13 +71,11 @@ exports[`Experience Card display correctly 1`] = `
     >
       ReactJS
     </a>
-    <a
+    <span
       className="c2"
-      href="https://redux.js.org/"
-      target="_blank"
     >
       Redux
-    </a>
+    </span>
   </div>
 </div>
 `;
