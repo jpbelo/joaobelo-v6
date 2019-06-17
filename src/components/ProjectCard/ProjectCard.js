@@ -25,7 +25,7 @@ const Container = styled.div`
     margin-top: 10px;
     font-size: 13px;
     transition: color 0.2s ease-in-out;
-    &:hover {
+    &[href*='http']:hover {
       color: #fc3c3c;
       opacity: 1;
     }
@@ -36,10 +36,14 @@ const Container = styled.div`
     color: grey;
   }
 `
+const Decommissioned = styled.p`
+  margin-top: 10px;
+  color: #fc3c3c;
+`
 
 export default class ProjectCard extends Component {
   render() {
-    const { name, type, description, tools, external_url } = this.props
+    const { status, name, type, description, tools, external_url } = this.props
     return (
       <Container>
         <h2>
@@ -47,9 +51,13 @@ export default class ProjectCard extends Component {
         </h2>
         <p dangerouslySetInnerHTML={{ __html: description }} />
         <ToolsList toolsList={tools} />
-        <a rel="noopener noreferrer" target="_blank" href={external_url}>
-          — project link
-        </a>
+        {status === 'online' ? (
+          <a rel="noopener noreferrer" target="_blank" href={external_url}>
+            — project link
+          </a>
+        ) : (
+          <Decommissioned>[Project decommissioned]</Decommissioned>
+        )}
       </Container>
     )
   }
@@ -57,9 +65,14 @@ export default class ProjectCard extends Component {
 
 ProjectCard.propTypes = {
   id: PropTypes.number.isRequired,
+  status: PropTypes.oneOf(['online', 'decommissioned', 'hidden']),
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   tools: PropTypes.array.isRequired,
   external_url: PropTypes.string.isRequired,
+}
+
+ProjectCard.defaultProps = {
+  status: 'online',
 }

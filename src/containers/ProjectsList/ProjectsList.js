@@ -10,9 +10,12 @@ export default class ProjectsList extends Component {
     const { projects } = this.props
     return (
       <Container>
-        {projects.map((project) => (
-          <ProjectCard {...project} key={project.id} />
-        ))}
+        {projects.map(
+          (project) =>
+            project.status !== 'hidden' && (
+              <ProjectCard {...project} key={project.id} />
+            ),
+        )}
       </Container>
     )
   }
