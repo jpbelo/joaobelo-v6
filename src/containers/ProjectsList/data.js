@@ -1,6 +1,7 @@
 export default [
   {
     id: 36,
+    status: 'hidden',
     name_id: 'stucco',
     name: 'Stucco',
     tags: 'Stucco',
@@ -130,6 +131,7 @@ export default [
   },
   {
     id: 28,
+    status: 'decommissioned',
     name_id: 'joaobelo',
     name: 'João Belo',
     tags: 'João Belo',
@@ -185,6 +187,7 @@ export default [
   },
   {
     id: 25,
+    status: 'decommissioned',
     name_id: 'plataforma-do-mar',
     name: 'Plataforma do Mar',
     tags: 'plataforma do mar',
