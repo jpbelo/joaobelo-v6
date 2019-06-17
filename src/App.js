@@ -98,7 +98,7 @@ class App extends Component {
           <Fragment>
             {!this.state.isMobile && (
               <LeftPanel>
-                <Title>My Work.</Title>
+                <Title>Projects.</Title>
                 <LeftPanelContent>
                   <ProjectsList />
                 </LeftPanelContent>
@@ -116,7 +116,7 @@ class App extends Component {
                     <Title>About.</Title>
                   </Tab>
                   <Tab>
-                    <Title>Work experience.</Title>
+                    <Title>Experience.</Title>
                   </Tab>
                 </StyledTabList>
                 <RightPanelContent>
