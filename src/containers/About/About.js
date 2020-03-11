@@ -127,21 +127,21 @@ export default class About extends Component {
             target="_blank"
             href="https://github.com/jpbelo"
           >
-            <img src={iconGithub} alt="Github" /> /jpbelo
+            <img src={iconGithub} alt="Github" /> jpbelo
           </a>
           <a
             rel="noopener noreferrer"
             target="_blank"
             href="https://bit.dev/joaobelo"
           >
-            <img src={iconBit} alt="Bit" /> /joaobelo
+            <img src={iconBit} alt="Bit" /> joaobelo
           </a>
           <a
             rel="noopener noreferrer"
             target="_blank"
             href="https://www.linkedin.com/in/joaobelo"
           >
-            <img src={iconLinkedin} alt="Linkedin" /> /joaobelo
+            <img src={iconLinkedin} alt="Linkedin" /> joaobelo
           </a>
           <a
             rel="noopener noreferrer"
