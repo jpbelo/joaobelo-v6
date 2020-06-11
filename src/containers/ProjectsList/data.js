@@ -1,7 +1,18 @@
 export default [
   {
+    id: 37,
+    name_id: 'hashdash',
+    name: 'HashDash',
+    tags: 'HashDash',
+    type: 'website',
+    external_url: 'https://hashdash.com',
+    tools: [{ name: 'NextJS' }, { name: 'strapi' }],
+    description:
+      'in collaboration with <a href="https://manoamanoclub.com/" target="_blank">Mano a Mano</a>',
+    date: '2019-04-01',
+  },
+  {
     id: 36,
-    status: 'hidden',
     name_id: 'stucco',
     name: 'Stucco',
     tags: 'Stucco',

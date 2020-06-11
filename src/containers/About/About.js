@@ -39,17 +39,14 @@ export default class About extends Component {
       <Container>
         <p>Hi, I’m João and I’m a Software Developer.</p>
         <p>
-          From early on, I had a special interest and curiosity about tech, that
-          motivated me to figure how things work on my own. My academic
-          background is on graphic design and multimedia, so front-end was
-          always apealing to me.
+          I've always had a special interest and curiosity about tech that
+          motivated me to figure how things work on my own. As a passionate
+          software developer I enjoy creating great digital experiences. My
+          background in communication design and product comes in hand when
+          translating an idea into paper and then bringing it to life.
         </p>
         <p>
-          As both developer and designer, my passion is for making good looking
-          interfaces, that not only work, but feel good to use.
-        </p>
-        <p>
-          At the moment, I'm working full-time as Tech Lead at{' '}
+          At the moment, I'm working full-time as VP of Engineering at{' '}
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -60,59 +57,9 @@ export default class About extends Component {
           , building an exciting new service.
         </p>
         <p>
-          Before that I worked at{' '}
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="http://mindera.com"
-          >
-            Mindera
-          </a>
-          , using technology to build great products for clients like{' '}
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://net-a-porter.com"
-          >
-            Net-a-Porter
-          </a>{' '}
-          and{' '}
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://waitrose.com"
-          >
-            Waitrose
-          </a>
-          .
-        </p>
-        <p>
-          Over the last years I've worked with some amazing people like{' '}
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="http://manoamanoclub.com"
-          >
-            Mano a Mano
-          </a>
-          ,{' '}
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="http://www.proto.pt"
-          >
-            Proto
-          </a>{' '}
-          and{' '}
-          <a rel="noopener noreferrer" target="_blank" href="http://www.327.pt">
-            327
-          </a>
-          .
-        </p>
-        <p>
           For the first time in years, I'm not working on any side projects so I
-          can keep my focus in my current position, but whenever I can, I enjoy
-          contributing to open source projects.
+          can keep my focus in the current project, but whenever I can, I still
+          enjoy contributing to open source projects.
         </p>
         <div className="social">
           <a

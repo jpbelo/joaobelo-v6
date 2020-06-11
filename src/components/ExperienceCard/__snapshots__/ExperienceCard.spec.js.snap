@@ -49,18 +49,6 @@ exports[`Experience Card display correctly 1`] = `
   <h2>
     Waitrose
   </h2>
-  <h3>
-    2019-04-19
-     to 
-    present
-  </h3>
-  <p
-    dangerouslySetInnerHTML={
-      Object {
-        "__html": "(<a href=\\"https://mindera.com\\" target=\\"_blank\\">Mindera</a>) Working as FE developer on <a href=\\"https://waitrose.com\\" target=\\"_blank\\">Waitrose‘s website</a>.",
-      }
-    }
-  />
   <div
     className="c1"
   >

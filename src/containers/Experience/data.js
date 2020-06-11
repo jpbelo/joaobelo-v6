@@ -1,29 +1,47 @@
 export default [
   {
     id: 6,
-    dateStart: '2020-02-01',
-    dateEnd: 'present',
     company: 'HashDash',
     url: 'https://hashdash.com',
-    info:
-      'Tech Lead at <a href="https://hashdash.com" target="_blank">HashDash</a>.',
+    positions: [
+      {
+        id: 2,
+        dateStart: '2020-05-01',
+        dateEnd: 'present',
+        info:
+          'VP of Engineering at <a href="https://hashdash.com" target="_blank">HashDash</a>.',
+      },
+      {
+        id: 1,
+        dateStart: '2020-02-01',
+        dateEnd: '2020-05-01',
+        info:
+          'Tech Lead at <a href="https://hashdash.com" target="_blank">HashDash</a>.',
+      },
+    ],
     techs: [
       { name: 'NextJS', url: 'https://nextjs.org/' },
       { name: 'Redux', url: 'https://redux.js.org/' },
       { name: 'styled-components', url: 'https://styled-components.com/' },
       { name: 'Jest', url: 'https://jestjs.io/' },
-      { name: 'Jenkins', url: 'https://jenkins.io/' },
+      { name: 'CicleCI', url: 'https://circleci.com/' },
+      { name: 'Vercel / Now', url: 'https://vercel.com/' },
       { name: 'Storybook', url: 'https://storybook.js.org/' },
     ],
   },
   {
     id: 5,
-    dateStart: '2019-04-19',
-    dateEnd: '2020-02-26',
+    positions: [
+      {
+        id: 1,
+        dateStart: '2019-04-19',
+        dateEnd: '2020-02-26',
+        info:
+          '(<a href="https://mindera.com" target="_blank">Mindera</a>) FE developer on <a href="https://waitrose.com" target="_blank">Waitrose‘s website</a>.',
+      },
+    ],
     company: 'Waitrose',
     url: 'https://waitrose.com',
-    info:
-      '(<a href="https://mindera.com" target="_blank">Mindera</a>) FE developer on <a href="https://waitrose.com" target="_blank">Waitrose‘s website</a>.',
     techs: [
       { name: 'ReactJS', url: 'https://reactjs.org/' },
       { name: 'Redux', url: 'https://redux.js.org/' },
@@ -37,12 +55,17 @@ export default [
   },
   {
     id: 4,
-    dateStart: '2018-06-11',
-    dateEnd: '2019-04-14',
-    company: 'NAP',
+    positions: [
+      {
+        id: 1,
+        dateStart: '2018-06-11',
+        dateEnd: '2019-04-14',
+        info:
+          '(<a href="https://mindera.com" target="_blank">Mindera</a>) FE developer on <a href="https://net-a-porter.com" target="_blank">Net-a-Porter</a> and <a href="https://www.mrporter.com" target="_blank">Mr Porter</a> projects.',
+      },
+    ],
+    company: 'Net-a-Porter & Mr. Porter',
     url: 'https://net-a-porter.com',
-    info:
-      '(<a href="https://mindera.com" target="_blank">Mindera</a>) FE developer on <a href="https://net-a-porter.com" target="_blank">Net-a-Porter</a> and <a href="https://www.mrporter.com" target="_blank">Mr Porter</a> projects.',
     techs: [
       { name: 'ReactJS', url: 'https://reactjs.org/' },
       { name: 'Redux', url: 'https://redux.js.org/' },
@@ -63,21 +86,31 @@ export default [
   },
   {
     id: 3,
-    dateStart: '2018-06-11',
-    dateEnd: '2020-02-26',
+    positions: [
+      {
+        id: 1,
+        dateStart: '2018-06-11',
+        dateEnd: '2020-02-26',
+        info:
+          'Front-end developer at <a href="https://mindera.com" target="_blank">Mindera</a>, working on multiple projects.',
+      },
+    ],
     company: 'Mindera',
     url: 'https://mindera.com',
-    info:
-      'Front-end developer at <a href="https://mindera.com" target="_blank">Mindera</a>, working on multiple projects.',
     techs: [],
   },
   {
     id: 2,
-    dateStart: '2014-08-04',
-    dateEnd: '2018-06-01',
+    positions: [
+      {
+        id: 1,
+        dateStart: '2014-08-04',
+        dateEnd: '2018-06-01',
+        info:
+          'Web development and multimedia content for multiple clients at <a target="_blank" href="http://327.pt">327 Creative Studio</a>.',
+      },
+    ],
     company: '327 CS',
-    info:
-      'Web development and multimedia content for multiple clients at <a target="_blank" href="http://327.pt">327 Creative Studio</a>.',
     techs: [
       { name: 'HTML' },
       { name: 'CSS' },
@@ -95,15 +128,20 @@ export default [
   },
   {
     id: 1,
-    dateStart: '2012-06-01',
-    dateEnd: '2020-01-31',
+    positions: [
+      {
+        id: 1,
+        dateStart: '2012-06-01',
+        dateEnd: '2020-01-31',
+        info:
+          'Over the years I‘ve worked on a bunch of projects, some are experiments as a way to study and ' +
+          'learn new tech, but most are collaborations with design studios and colleges from college. ' +
+          'Some of those are under the My Work tab.<br/>' +
+          'To keep things simple, I won‘t be listing technologies here, but I‘m currently focused on Javascript ' +
+          'frameworks and thing that go hand-to-hand with them.',
+      },
+    ],
     company: 'Freelancer',
-    info:
-      'Over the years I‘ve worked on a bunch of projects, some are experiments as a way to study and ' +
-      'learn new tech, but most are collaborations with design studios and colleges from college. ' +
-      'Some of those are under the My Work tab.<br/>' +
-      'To keep things simple, I won‘t be listing technologies here, but I‘m currently focused on Javascript ' +
-      'frameworks and thing that go hand-to-hand with them.',
     techs: [],
   },
 ]

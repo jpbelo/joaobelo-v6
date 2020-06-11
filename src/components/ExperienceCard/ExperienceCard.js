@@ -19,16 +19,25 @@ const ExperienceCardContainer = styled.div`
   }
 `
 
+const PositionCardContainer = styled.div`
+  border-left: 1px solid #999;
+  padding-left: 10px;
+`
+
 export default class ExperienceCard extends Component {
   render() {
-    const { company, dateStart, dateEnd, info, techs } = this.props
+    const { company, positions, techs } = this.props
     return (
       <ExperienceCardContainer mb={4}>
         <h2>{company}</h2>
-        <h3>
-          {dateStart} to {dateEnd}
-        </h3>
-        <p dangerouslySetInnerHTML={{ __html: info }} />
+        {positions.map((position) => (
+          <PositionCardContainer key={position.id}>
+            <h3>
+              {position.dateStart} to {position.dateEnd}
+            </h3>
+            <p dangerouslySetInnerHTML={{ __html: position.info }} />
+          </PositionCardContainer>
+        ))}
         <TechsList techsList={techs} />
       </ExperienceCardContainer>
     )
@@ -38,8 +47,16 @@ export default class ExperienceCard extends Component {
 ExperienceCard.propTypes = {
   id: PropTypes.number.isRequired,
   company: PropTypes.string.isRequired,
-  dateStart: PropTypes.string.isRequired,
-  dateEnd: PropTypes.string.isRequired,
-  info: PropTypes.string.isRequired,
+  positions: PropTypes.arrayOf(
+    PropTypes.shape({
+      info: PropTypes.string.isRequired,
+      dateStart: PropTypes.string.isRequired,
+      dateEnd: PropTypes.string.isRequired,
+    }),
+  ),
   techs: PropTypes.array.isRequired,
+}
+
+ExperienceCard.defaultProps = {
+  positions: [],
 }
