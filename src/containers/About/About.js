@@ -42,24 +42,25 @@ export default class About extends Component {
           I've always had a special interest and curiosity about tech that
           motivated me to figure how things work on my own. As a passionate
           software developer I enjoy creating great digital experiences. My
-          background in communication design and product comes in hand when
-          translating an idea into paper and then bringing it to life.
+          background in product and communication design comes in handy when
+          translating a product concept into an user interface.
         </p>
         <p>
-          At the moment, I'm working full-time as VP of Engineering at{' '}
+          At the moment, I'm working as a frontend developer at{' '}
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="http://hashdash.com"
+            href="http://8x8.com"
           >
-            HashDash
+            8x8
           </a>
-          , building an exciting new service.
+          ,building a brand new experience for the supervisors of 8x8x‘s
+          contact center.
         </p>
         <p>
-          For the first time in years, I'm not working on any side projects so I
-          can keep my focus in the current project, but whenever I can, I still
-          enjoy contributing to open source projects.
+          I'm currently not working on any side projects so I can keep my
+          focus in the current project, but whenever I can, I still enjoy
+          contributing to open source projects.
         </p>
         <div className="social">
           <a
@@ -75,13 +76,6 @@ export default class About extends Component {
             href="https://github.com/jpbelo"
           >
             <img src={iconGithub} alt="Github" /> jpbelo
-          </a>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://bit.dev/joaobelo"
-          >
-            <img src={iconBit} alt="Bit" /> joaobelo
           </a>
           <a
             rel="noopener noreferrer"
