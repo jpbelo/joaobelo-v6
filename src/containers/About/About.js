@@ -54,7 +54,7 @@ export default class About extends Component {
           >
             8x8
           </a>
-          ,building a brand new experience for the supervisors of 8x8x‘s
+          , building a brand new experience for the supervisors of 8x8x‘s
           contact center.
         </p>
         <p>
