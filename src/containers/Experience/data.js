@@ -10,7 +10,17 @@ export default [
         dateEnd: 'present',
         info: 'Senior Frontend Engineer.',
       },
-    ]
+    ],
+    techs: [
+      { name: 'React', url: 'https://reactjs.org' },
+      { name: 'Micro Frontends', url: 'https://webpack.js.org/concepts/module-federation/' },
+      { name: 'Typescript', url: 'https://www.typescriptlang.org' },
+      { name: 'Redux', url: 'https://redux.js.org' },
+      { name: 'styled-components', url: 'https://styled-components.com' },
+      { name: 'Jest', url: 'https://jestjs.io' },
+      { name: 'Cypress', url: 'https://www.cypress.io' },
+      { name: 'Storybook', url: 'https://storybook.js.org' },
+    ],
   },
   {
     id: 7,
@@ -23,7 +33,11 @@ export default [
         dateEnd: 'present',
         info: 'Senior Frontend Engineer.',
       },
-    ]
+    ],
+    techs: [
+      { name: 'Vue.js', url: 'https://vuejs.org/' },
+      { name: 'Storybook', url: 'https://storybook.js.org/' },
+    ],
   },
   {
     id: 6,
