@@ -1,5 +1,45 @@
 export default [
   {
+    id: 8,
+    company: '8x8',
+    url: 'https://8x8.com',
+    positions: [
+      {
+        id: 1,
+        dateStart: '2022-02-01',
+        dateEnd: 'present',
+        info: 'Senior Frontend Engineer.',
+      },
+    ],
+    techs: [
+      { name: 'React', url: 'https://reactjs.org' },
+      { name: 'Micro Frontends', url: 'https://webpack.js.org/concepts/module-federation/' },
+      { name: 'Typescript', url: 'https://www.typescriptlang.org' },
+      { name: 'Redux', url: 'https://redux.js.org' },
+      { name: 'styled-components', url: 'https://styled-components.com' },
+      { name: 'Jest', url: 'https://jestjs.io' },
+      { name: 'Cypress', url: 'https://www.cypress.io' },
+      { name: 'Storybook', url: 'https://storybook.js.org' },
+    ],
+  },
+  {
+    id: 7,
+    company: 'Fuze (now 8x8)',
+    url: 'https://fuze.com',
+    positions: [
+      {
+        id: 1,
+        dateStart: '2021-12-13',
+        dateEnd: 'present',
+        info: 'Senior Frontend Engineer.',
+      },
+    ],
+    techs: [
+      { name: 'Vue.js', url: 'https://vuejs.org/' },
+      { name: 'Storybook', url: 'https://storybook.js.org/' },
+    ],
+  },
+  {
     id: 6,
     company: 'HashDash',
     url: 'https://hashdash.com',
