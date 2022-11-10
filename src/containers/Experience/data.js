@@ -1,5 +1,32 @@
 export default [
   {
+    id: 8,
+    company: '8x8',
+    positions: [
+      {
+        id: 1,
+        dateStart: '2022-02-01',
+        dateEnd: 'present',
+        info:
+          'Senior Frontend Engineer.',
+      },
+    ]
+  },
+  {
+    id: 7,
+    company: 'Fuze',
+    url: 'https://fuze.com',
+    positions: [
+      {
+        id: 1,
+        dateStart: '2021-12-13',
+        dateEnd: 'present',
+        info:
+          'Senior Frontend Engineer.',
+      },
+    ]
+  },
+  {
     id: 6,
     company: 'HashDash',
     url: 'https://hashdash.com',
