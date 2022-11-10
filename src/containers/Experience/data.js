@@ -2,27 +2,26 @@ export default [
   {
     id: 8,
     company: '8x8',
+    url: 'https://8x8.com',
     positions: [
       {
         id: 1,
         dateStart: '2022-02-01',
         dateEnd: 'present',
-        info:
-          'Senior Frontend Engineer.',
+        info: 'Senior Frontend Engineer.',
       },
     ]
   },
   {
     id: 7,
-    company: 'Fuze',
+    company: 'Fuze (now 8x8)',
     url: 'https://fuze.com',
     positions: [
       {
         id: 1,
         dateStart: '2021-12-13',
         dateEnd: 'present',
-        info:
-          'Senior Frontend Engineer.',
+        info: 'Senior Frontend Engineer.',
       },
     ]
   },
