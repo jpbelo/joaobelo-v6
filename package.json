@@ -13,7 +13,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "react-tabs": "^3.0.0",
     "styled-components": "^4.2.1",
     "styled-components-modifiers": "^1.2.1",
